@@ -22,7 +22,7 @@ export default function BookPage() {
 
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's{" "}
+            Let&apos;s{" "}
             <span className="italic font-serif text-transparent bg-gradient-to-r from-[#FF4B2B] to-[#FF9F40] bg-clip-text">
               Talk
             </span>

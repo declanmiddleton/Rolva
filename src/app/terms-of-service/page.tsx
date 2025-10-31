@@ -27,7 +27,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-white">1. Agreement to Terms</h2>
             <p className="text-gray-300 leading-relaxed">
-              By accessing or using Rolva's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing our services.
+              By accessing or using Rolva&apos;s services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing our services.
             </p>
           </section>
 
@@ -67,7 +67,7 @@ export default function TermsOfService() {
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>Average turnaround time of 48 hours for design requests</li>
               <li>One request processed at a time per subscription</li>
-              <li>Unlimited revisions until you're satisfied</li>
+              <li>Unlimited revisions until you&apos;re satisfied</li>
               <li>Delivery times may vary based on request complexity</li>
             </ul>
           </section>
@@ -110,7 +110,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-white">9. Changes to Terms</h2>
             <p className="text-gray-300 leading-relaxed">
-              We reserve the right to modify these terms at any time. We will notify you of any changes by posting the new Terms of Service on this page and updating the "Last updated" date. Your continued use of our services after changes constitutes acceptance of the new terms.
+              We reserve the right to modify these terms at any time. We will notify you of any changes by posting the new Terms of Service on this page and updating the &quot;Last updated&quot; date. Your continued use of our services after changes constitutes acceptance of the new terms.
             </p>
           </section>
 

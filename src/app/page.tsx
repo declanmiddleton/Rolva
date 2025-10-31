@@ -138,14 +138,14 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Reasons you'll{" "}
+              Reasons you&apos;ll{" "}
               <span className="italic font-serif text-transparent bg-gradient-to-r from-[#5B7CFF] to-[#FF6B4A] bg-clip-text">
                 love
               </span>{" "}
               us
             </h2>
             <p className="text-xl text-gray-400">
-              Once you try Rova, you'll never want to go back.
+              Once you try Rolva, you&apos;ll never want to go back.
             </p>
           </motion.div>
 
@@ -343,7 +343,7 @@ export default function Home() {
                 Why Monthly Retainer?
               </h4>
               <p className="text-gray-400 leading-relaxed">
-                Social media growth doesn't happen overnight. A monthly retainer ensures{" "}
+                Social media growth doesn&apos;t happen overnight. A monthly retainer ensures{" "}
                 <span className="text-white font-medium">predictable results</span>,{" "}
                 <span className="text-white font-medium">long-term growth</span>, and{" "}
                 <span className="text-white font-medium">consistent brand building</span>—all without the stress of one-off projects or scattered efforts.

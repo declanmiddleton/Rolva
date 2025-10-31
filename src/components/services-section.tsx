@@ -68,7 +68,7 @@ export function ServicesSection() {
               {/* What's Included */}
               <div className="mb-6">
                 <p className="text-sm uppercase tracking-wider text-gray-500 font-semibold mb-4">
-                  What's Included in Your Monthly Plan
+                  What&apos;s Included in Your Monthly Plan
                 </p>
                 <ul className="space-y-3">
                   {includedFeatures.map((feature, index) => (
@@ -98,7 +98,7 @@ export function ServicesSection() {
               Why Monthly Retainer?
             </h4>
             <p className="text-gray-400 leading-relaxed max-w-2xl mx-auto">
-              Social media growth doesn't happen overnight. A monthly retainer ensures{" "}
+              Social media growth doesn&apos;t happen overnight. A monthly retainer ensures{" "}
               <span className="text-white font-medium">predictable results</span>,{" "}
               <span className="text-white font-medium">long-term growth</span>, and{" "}
               <span className="text-white font-medium">consistent brand building</span>—all without the stress of one-off projects or scattered efforts.

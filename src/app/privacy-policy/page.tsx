@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4 text-white">9. Children's Privacy</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-white">9. Children&apos;s Privacy</h2>
             <p className="text-gray-300 leading-relaxed">
               Our services are not intended for children under 13 years of age. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately.
             </p>
@@ -138,7 +138,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-white">11. Changes to This Policy</h2>
             <p className="text-gray-300 leading-relaxed">
-              We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date. We encourage you to review this policy periodically.
+              We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the &quot;Last updated&quot; date. We encourage you to review this policy periodically.
             </p>
           </section>
 
@@ -171,7 +171,7 @@ export default function PrivacyPolicy() {
         <div className="mt-16 p-8 rounded-2xl bg-white/5 border border-white/10">
           <h3 className="text-xl font-semibold mb-4">Questions about privacy?</h3>
           <p className="text-gray-400 mb-6">
-            We're committed to protecting your data. Contact us anytime.
+            We&apos;re committed to protecting your data. Contact us anytime.
           </p>
           <Link href="/#pricing">
             <Button size="lg">Get started</Button>

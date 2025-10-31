@@ -51,9 +51,6 @@ export function Navigation() {
                 className="text-[13px] text-gray-400 hover:text-white transition-colors relative group font-medium"
               >
                 {item.label}
-                {item.hasDropdown && (
-                  <span className="ml-1 text-xs opacity-50">▾</span>
-                )}
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white group-hover:w-full transition-all duration-300" />
               </Link>
             ))}

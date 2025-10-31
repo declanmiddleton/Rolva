@@ -7,6 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Rolva - Social Marketing Agency",
   description: "Transform your brand's social media presence with expert marketing strategies",
+  icons: {
+    icon: "/logo-transparent.ico",
+    shortcut: "/logo-transparent.ico",
+    apple: "/logo-transparent.ico",
+  },
 };
 
 export default function RootLayout({

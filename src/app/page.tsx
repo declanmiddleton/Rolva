@@ -191,23 +191,23 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section id="process" className="py-20 px-6">
+      <section id="process" className="py-32 px-6">
         <div className="container mx-auto max-w-6xl">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              All your design needs{" "}
-              <span className="italic font-serif text-transparent bg-gradient-to-r from-[#5B7CFF] to-[#FF6B4A] bg-clip-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              All your marketing needs{" "}
+              <span className="italic font-serif text-transparent bg-gradient-to-r from-[#FF4B2B] to-[#FF9F40] bg-clip-text">
                 covered
               </span>
             </h2>
-            <p className="text-xl text-gray-400">
-              Running a successful business means taking on multiple roles. We cover all your design needs.
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              Running a business is already hard enough — that&apos;s where we come in. Rolva handles your social media, content creation, and paid ads so you can focus on what matters.
             </p>
           </motion.div>
 
@@ -220,50 +220,59 @@ export default function Home() {
           >
             <ProcessCard
               number="01"
-              title="Subscribe"
-              description="Choose the plan that's right for you and subscribe in minutes."
+              title="Onboard"
+              description="Choose your plan and complete a quick onboarding form so we can understand your goals, audience, and brand tone."
             />
             <ProcessCard
               number="02"
-              title="Request"
-              description="Submit as many design requests as you want through your board."
+              title="Create & Manage"
+              description="We plan, design, and schedule content, manage your social accounts, and ensure your brand stays active and consistent."
             />
             <ProcessCard
               number="03"
-              title="Receive"
-              description="Get your designs delivered in 48 hours on average, ready to use."
+              title="Scale & Report"
+              description="We optimize your campaigns, manage ad spend, and deliver monthly reports with growth metrics and insights."
             />
           </motion.div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 px-6">
+      <section id="testimonials" className="py-32 px-6">
         <div className="container mx-auto max-w-6xl">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              What our clients{" "}
+              <span className="italic font-serif text-transparent bg-gradient-to-r from-[#FF4B2B] to-[#FF9F40] bg-clip-text">
+                say
+              </span>
+            </h2>
+          </motion.div>
+
           <motion.div 
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid md:grid-cols-3 gap-6"
+            className="grid md:grid-cols-2 gap-6"
           >
             <TestimonialCard
               rating={5}
-              text="Getting design done has never been such a pain. I am so glad I've found Rova. The work is incredible and the process is refreshingly painless."
-              author="Jenny Landon"
-              role="Founder at Proof"
+              text="Rolva took my socials from quiet to booming. The content hits perfectly every time."
+              author="Jkinz"
+              role="Entrepreneur"
             />
             <TestimonialCard
               rating={5}
-              text="Rova has completely transformed our social media presence. The quality is outstanding and the turnaround time is unbelievable."
-              author="Marcus Chen"
-              role="CEO at TechFlow"
-            />
-            <TestimonialCard
-              rating={5}
-              text="I can't imagine going back to working with freelancers. Rova is simply the best design service I've ever used."
-              author="Sarah Williams"
-              role="Marketing Director"
+              text="Rolva transformed our online presence. The content looks professional, engagement&apos;s up, and I don&apos;t worry about posting anymore."
+              author="Ryan Suender"
+              role="Founder of WebDyno"
             />
           </motion.div>
         </div>
@@ -427,15 +436,24 @@ function ProcessCard({ number, title, description }: ProcessCardProps) {
   return (
     <motion.div 
       variants={fadeInUp}
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.3 }}
-      className="relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300"
+      whileHover={{ y: -12 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="group relative p-10 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300"
     >
-      <div className="text-6xl font-bold text-transparent bg-gradient-to-br from-[#5B7CFF]/20 to-[#FF6B4A]/20 bg-clip-text mb-4">
-        {number}
+      {/* Gradient border glow on hover */}
+      <div className="absolute -inset-[1px] bg-gradient-to-r from-[#FF4B2B] to-[#FF9F40] rounded-2xl opacity-0 group-hover:opacity-20 transition duration-500 blur-sm" />
+      
+      <div className="relative">
+        <div className="text-7xl font-bold text-transparent bg-gradient-to-br from-[#FF4B2B]/30 to-[#FF9F40]/30 bg-clip-text mb-6">
+          {number}
+        </div>
+        <h3 className="text-2xl font-bold mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-300 group-hover:bg-clip-text transition-all duration-300">
+          {title}
+        </h3>
+        <p className="text-gray-400 leading-relaxed text-base">
+          {description}
+        </p>
       </div>
-      <h3 className="text-2xl font-semibold mb-3">{title}</h3>
-      <p className="text-gray-400 leading-relaxed">{description}</p>
     </motion.div>
   );
 }
@@ -451,19 +469,26 @@ function TestimonialCard({ rating, text, author, role }: TestimonialCardProps) {
   return (
     <motion.div 
       variants={fadeInUp}
-      whileHover={{ y: -5 }}
+      whileHover={{ y: -8 }}
       transition={{ duration: 0.3 }}
-      className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300"
+      className="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300"
     >
-      <div className="flex gap-1 mb-4">
-        {Array.from({ length: rating }).map((_, i) => (
-          <Star key={i} className="h-4 w-4 fill-yellow-500 text-yellow-500" />
-        ))}
-      </div>
-      <p className="text-gray-300 mb-6 leading-relaxed">{text}</p>
-      <div>
-        <p className="font-semibold">{author}</p>
-        <p className="text-sm text-gray-500">{role}</p>
+      {/* Subtle gradient glow on hover */}
+      <div className="absolute -inset-[1px] bg-gradient-to-r from-[#FF4B2B] to-[#FF9F40] rounded-2xl opacity-0 group-hover:opacity-15 transition duration-500 blur-sm" />
+      
+      <div className="relative">
+        <div className="flex gap-1 mb-6">
+          {Array.from({ length: rating }).map((_, i) => (
+            <Star key={i} className="h-5 w-5 fill-[#FF4B2B] text-[#FF4B2B]" />
+          ))}
+        </div>
+        <p className="text-gray-200 mb-8 leading-relaxed text-lg">
+          &quot;{text}&quot;
+        </p>
+        <div className="border-t border-white/10 pt-4">
+          <p className="font-semibold text-white">{author}</p>
+          <p className="text-sm text-gray-500 mt-1">{role}</p>
+        </div>
       </div>
     </motion.div>
   );

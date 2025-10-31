@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 228 94% 67%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 64.9%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 228 94% 67%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground antialiased;
+    background: 
+      url('/noise.svg'),
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(91, 124, 255, 0.15), transparent),
+      radial-gradient(ellipse 60% 50% at 0% 50%, rgba(255, 107, 74, 0.1), transparent),
+      radial-gradient(ellipse 60% 50% at 100% 50%, rgba(255, 159, 64, 0.1), transparent),
+      radial-gradient(ellipse 80% 80% at 50% 100%, rgba(91, 124, 255, 0.12), transparent),
+      #000000;
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 200px 200px, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    background-attachment: fixed;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Calendly Widget Customization */
+.calendly-inline-widget {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+/* Override Calendly iframe styles to match dark theme */
+.calendly-inline-widget iframe {
+  border-radius: 0.75rem;
+}

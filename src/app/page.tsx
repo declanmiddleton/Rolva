@@ -62,9 +62,9 @@ export default function Home() {
             >
               Content moves fast.
               <br />
-              We make sure yours{" "}
+              Never fall behind.{" "}
               <span className="italic font-serif text-transparent bg-gradient-to-r from-[#FF4B2B] to-[#FF9F40] bg-clip-text">
-                never gets left behind.
+                Move forward.
               </span>
             </motion.h1>
 

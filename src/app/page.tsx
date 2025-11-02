@@ -60,11 +60,11 @@ export default function Home() {
               variants={fadeInUp}
               className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1]"
             >
-              Social media moves fast.
+              Content moves fast.
               <br />
-              We move{" "}
+              We make sure yours{" "}
               <span className="italic font-serif text-transparent bg-gradient-to-r from-[#FF4B2B] to-[#FF9F40] bg-clip-text">
-                faster.
+                never gets left behind.
               </span>
             </motion.h1>
 
@@ -72,7 +72,7 @@ export default function Home() {
               variants={fadeInUp}
               className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed"
             >
-                  Say goodbye to expensive freelancers, and hello to limitless, lightning fast social media management.
+              Rolva is your personal content system — creating, managing, and distributing posts across every platform so your brand stays active 24/7.
             </motion.p>
 
             <motion.div 
@@ -137,15 +137,15 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Reasons you&apos;ll{" "}
-              <span className="italic font-serif text-transparent bg-gradient-to-r from-[#5B7CFF] to-[#FF6B4A] bg-clip-text">
-                love
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Why businesses{" "}
+              <span className="italic font-serif text-transparent bg-gradient-to-r from-[#FF4B2B] to-[#FF9F40] bg-clip-text">
+                choose
               </span>{" "}
-              us
+              Rolva
             </h2>
-            <p className="text-xl text-gray-400">
-              Once you try Rolva, you&apos;ll never want to go back.
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              We don&apos;t just post for you — we build your entire content system.
             </p>
           </motion.div>
 
@@ -154,37 +154,22 @@ export default function Home() {
             whileInView="animate"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto"
           >
             <FeatureCard
               icon={<LayoutDashboard className="h-8 w-8" />}
-              title="Dashboard Board"
-              description="Request as many social media designs as you like on your own Trello board."
-            />
-            <FeatureCard
-              icon={<Zap className="h-8 w-8" />}
-              title="Lightning Fast"
-              description="Receive your social media content in just 48 hours on average."
-            />
-            <FeatureCard
-              icon={<Trophy className="h-8 w-8" />}
-              title="Award-Winning"
-              description="Leave your customers in awe with award-winning social media designs."
-            />
-            <FeatureCard
-              icon={<Users className="h-8 w-8" />}
-              title="Unlimited Requests"
-              description="Submit as many design requests as you like and we'll get to work on them one by one."
-            />
-            <FeatureCard
-              icon={<Clock className="h-8 w-8" />}
-              title="Unlimited Revisions"
-              description="Not happy with the first draft? No problem. Unlimited revisions until you're satisfied."
+              title="Multi-Platform Posting"
+              description="From Instagram to TikTok — we handle it all."
             />
             <FeatureCard
               icon={<CheckCircle2 className="h-8 w-8" />}
+              title="Unlimited Revisions"
+              description="We refine your content until it&apos;s perfect."
+            />
+            <FeatureCard
+              icon={<Clock className="h-8 w-8" />}
               title="Pause Anytime"
-              description="No more requests for now? Just hit pause and resume your subscription at a future date."
+              description="Scale your presence on your own schedule."
             />
           </motion.div>
         </div>
@@ -207,7 +192,10 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Running a business is already hard enough — that&apos;s where we come in. Rolva handles your social media, content creation, and paid ads so you can focus on what matters.
+              Running a business is already hard enough — that&apos;s where we come in.
+            </p>
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed mt-4">
+              Rolva manages your entire online presence — from short-form content creation to cross-platform scheduling and ad optimization — so you can focus on running your business.
             </p>
           </motion.div>
 
@@ -216,23 +204,51 @@ export default function Home() {
             whileInView="animate"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid md:grid-cols-3 gap-8"
+            className="grid md:grid-cols-3 gap-8 mb-16"
           >
             <ProcessCard
               number="01"
               title="Onboard"
-              description="Choose your plan and complete a quick onboarding form so we can understand your goals, audience, and brand tone."
+              description="Fill out our short form so we can understand your brand, goals, and content style."
             />
             <ProcessCard
               number="02"
-              title="Create & Manage"
-              description="We plan, design, and schedule content, manage your social accounts, and ensure your brand stays active and consistent."
+              title="Setup"
+              description="We connect your social accounts, organize your content folder, and automate your posting system."
             />
             <ProcessCard
               number="03"
-              title="Scale & Report"
-              description="We optimize your campaigns, manage ad spend, and deliver monthly reports with growth metrics and insights."
+              title="Grow"
+              description="Your content goes live automatically — we monitor, optimize, and report on performance every month."
             />
+          </motion.div>
+
+          {/* Additional Info Cards */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"
+          >
+            <div className="p-6 rounded-xl bg-gradient-to-br from-[#FF4B2B]/5 to-[#FF9F40]/5 border border-[#FF4B2B]/20">
+              <h4 className="font-semibold text-white mb-2 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-[#FF4B2B]" />
+                Hands-Off Management
+              </h4>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                You record short clips or share past videos — we handle everything else.
+              </p>
+            </div>
+            <div className="p-6 rounded-xl bg-gradient-to-br from-[#5B7CFF]/5 to-[#FF9F40]/5 border border-[#5B7CFF]/20">
+              <h4 className="font-semibold text-white mb-2 flex items-center gap-2">
+                <LayoutDashboard className="h-5 w-5 text-[#5B7CFF]" />
+                Weekly Tracking
+              </h4>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                You&apos;ll get quick performance summaries showing what&apos;s working.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>

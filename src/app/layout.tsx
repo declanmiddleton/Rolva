@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rolva - Social Marketing Agency",
+  title: "Rolva - Content Systems Agency",
   description: "Transform your brand's social media presence with expert marketing strategies",
   icons: {
     icon: "/logo-transparent.ico",
